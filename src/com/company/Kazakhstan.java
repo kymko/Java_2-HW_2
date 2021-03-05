@@ -1,6 +1,6 @@
 package com.company;
 
-public class Kazakhstan extends Country implements Printable{
+public class Kazakhstan extends Country implements Printable {
 
     private String capital;
 
@@ -9,17 +9,23 @@ public class Kazakhstan extends Country implements Printable{
         this.capital = capital;
     }
 
-    public String getCapital(){
+    public String getCapital() {
         return capital;
     }
 
-    public void setCapital(String capital){
+    public void setCapital(String capital) {
         this.capital = capital;
     }
 
     @Override
     public void print() {
-        System.out.println("The name of the country:" + getNameOfCountry() + "\nContinent:" + getContinent() + "\nPopulation:" + getPopulation() + " million people "+
-                 "\nThe capital of Kazakhstan:" + getCapital());
+        System.out.println("The name of the country:" + getNameOfCountry() + "\nContinent:" + getContinent() + "\nPopulation:" + getPopulation() + " million people " +
+                "\nThe capital of Kazakhstan:" + getCapital());
+    }
+
+    @Override
+    public void nationalFlag() {
+        System.out.println("\uD83C\uDDF0\uD83C\uDDFF");
+
     }
 }
